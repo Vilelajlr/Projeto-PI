@@ -1,0 +1,258 @@
+/* ESTILOS GERAIS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+input:checked + label {
+  font-weight: bolder;
+}
+
+body {
+  background-image: linear-gradient(to top, #020024, #17c98b, #00d4ff);
+  height: 100%;
+}
+
+header{
+  background-color: rgba(52, 52, 52, 0.857);
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
+
+main {
+  background-color: rgba(52, 52, 52, 0.857);
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #949494;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+  padding: 0 30px;
+}
+
+header .menu-desktop a:hover {
+  color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+button:hover{
+  box-shadow: 0 0 8px #00ff08;
+  transform: scale(1.1);
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.txt {
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+/* ESTILO DIV DADOS */
+
+.dados {
+  padding: 80px 4%;
+}
+
+.dados #form legend {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0 10px;
+}
+.dados #form legend span{
+  color: #00ff08;
+}
+
+.dados #form fieldset {
+  border-radius: 30px;
+  padding: 30px;
+}
+
+/* estilos campos */
+
+:is(.inserir__dados .nome, .email, .cpf, .dtnasci)
+  :is(#nome, #email, #cpf, #dtnas) {
+  background-color: rgba(52, 52, 52, 0.857);
+  border-radius: 30px;
+  padding: 2px 8px;
+  margin: 8px 0;
+  color: #f1f1f1;
+}
+
+.inserir__dados input:valid {
+  border: 2px solid lightgreen;
+}
+
+.inserir__dados input:valid + span::after {
+  content: "✅";
+}
+
+.inserir__dados input:invalid {
+  border: 2px solid red;
+}
+
+.inserir__dados input:invalid + span::after {
+  content: "❌";
+}
+
+.inserir__dados input:focus {
+  outline: none;
+}
+
+.inserir__dados input::placeholder,
+#dtnas {
+  color: #f1f1f1;
+}
+
+.dados .estuda {
+  padding: 0 20px;
+}
+
+.dados section {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+/* ESTILO RECLAMAÇÕES */
+
+.reclamacoes {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.rec_area .contato {
+  margin: 13px 0;
+}
+
+.rec_area .contato select {
+  border-radius: 30px;
+  padding: 4px 8px;
+  color: #f1f1f1;
+  background-color: rgba(52, 52, 52, 0.857);
+}
+
+.rec_area .check span {
+  display: block;
+  margin: 5px 0 10px 0;
+}
+
+.rec_area .check {
+  padding: 3px 0;
+}
+
+.rec_area .area_texto #rec {
+  resize: none;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(52, 52, 52, 0.857);
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  transition: 0.2s;
+  outline: none;
+  color: #f1f1f1;
+}
+
+.rec_area .area_texto #rec:hover {
+  box-shadow: 0 0 10px #f1f1f1;
+}
+
+.rec_area .area_texto #rec::placeholder {
+  color: #f1f1f1;
+
+  font-weight: 400;
+}
+
+.rec_area .receber_arquivos > input{
+  color: #f1f1f1;
+}
+
+.rec_area .receber_arquivos > input::-webkit-file-upload-button{
+  background-color: rgba(52, 52, 52, 0.909);
+  padding: 5px 8px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  color: #f1f1f1;
+  cursor: pointer;
+  margin: 20px 2px;
+}
+
+
+
+.btn-enviar-limpar {
+  text-align: center;
+}
+
+.btn-enviar-limpar button {
+  outline: none;
+  border: 1px solid #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 15px 0;
+  background-color: rgba(52, 52, 52, 0.857);
+  color: #f1f1f1;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.btn-enviar-limpar button:hover {
+  border: none;
+  box-shadow: 0 0 10px #f1f1f1;
+  cursor: pointer;
+}
+
+
+footer{
+  text-align: center;
+  width: 98%;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(52, 52, 52, 0.857);
+}
+footer p{
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+

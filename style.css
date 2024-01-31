@@ -1,0 +1,315 @@
+/* ESTILOS GERAIS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h2.titulo {
+  color: #f1f1f1;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #00ff08;
+}
+
+body {
+  background-image: linear-gradient(to top, #020024, #17c98b, #00d4ff);
+  height: 100%;
+}
+
+header{
+  background-color: rgba(52, 52, 52, 0.857);
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  
+}
+
+main {
+  
+  background-color: rgba(52, 52, 52, 0.857);
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+button:hover{
+  box-shadow: 0 0 8px #00ff08;
+  transform: scale(1.1);
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #949494;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+  padding: 0 30px;
+}
+
+header .menu-desktop a:hover {
+  color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* ESTILO TOPO */
+
+.topo-do-site {
+  padding: 40px 4%;
+}
+
+.topo-do-site .txt-topo-site a {
+  text-decoration: none;
+  color: #00ff08;
+}
+
+.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+  color: #f1f1f1;
+  font-size: 42px;
+  line-height: 40px;
+}
+.topo-do-site .txt-topo-site h1 span {
+  color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #f1f1f1;
+  margin: 40px 0;
+  text-align: justify;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 0 20px #f1f1f1;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* ESTILO BOAS VINDAS */
+
+.boas-vindas {
+  padding: 40px 4%;
+}
+
+.boas-vindas .flex {
+  gap: 60px;
+}
+
+.boas-vindas .boas-vindas-box {
+  color: #f1f1f1;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.boas-vindas .boas-vindas-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #f1f1f169;
+}
+
+.boas-vindas .boas-vindas-box p {
+  text-align: justify;
+}
+
+.boas-vindas .boas-vindas-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/* estilo missoes e visao */
+
+.missao,
+.visao {
+  padding: 80px 4%;
+}
+.missao .flex,
+.visao .flex {
+  align-items: center;
+  gap: 60px;
+}
+.missao .txt-missao,
+.visao .txt-visao {
+  color: #f1f1f1;
+}
+.missao .txt-missao h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.missao .txt-missao h2 span {
+  color: #00ff08;
+  display: block;
+  font-size: 30px;
+}
+.missao .txt-missao p,
+.visao .txt-visao p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.missao .img-missao img {
+  border-radius: 50px;
+}
+
+
+
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+  
+}
+
+.btn-social .galeria > button{
+  display: flex;
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  margin: 0 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 228px;
+}
+
+
+
+/* ESTILO VALORES */
+
+.valores {
+  padding: 80px 4%;
+}
+
+.valores .txt-valores p {
+  color: #f1f1f1;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* estilos aulas */
+
+.aulas {
+  padding: 80px 4%;
+}
+
+.aulas .flex {
+  gap: 60px;
+}
+
+.aulas .aulas-box {
+  color: #f1f1f1;
+  padding: 20px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.aulas .aulas-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #f1f1f169;
+}
+
+.aulas .aulas-box ol {
+  list-style-type: none;
+}
+
+.aulas .aulas-box ol ul {
+  padding-left: 30px;
+}
+
+.aulas .aulas-box h1 {
+  font-size: 18px;
+  padding: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+/* ESTILO RODAPE */
+
+footer{
+  width: 98%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  background-color: rgba(52, 52, 52, 0.857);
+}
+
+.rodape {
+  padding: 80px 4%;
+}
+
+.rodape .mapa {
+  margin-top: 30px;
+}
+
+.rodape .flex {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rodape address {
+  color: #f1f1f1;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
