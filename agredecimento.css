@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.flex {
+  display: flex;
+  
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: linear-gradient(to top, #020024, #17c98b, #00d4ff);
+  height: 100vh;
+  
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header {
+  background-color: rgba(52, 52, 52, 0.857);
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
+
+main {
+  background-color: rgba(52, 52, 52, 0.857);
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+  width: 98%;
+  
+}
+
+.button:hover {
+  box-shadow: 0 0 8px #00ff08;
+  transform: scale(1.1);
+}
+.btn-contato .button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-contato > a{
+    color: #000;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #949494;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+  padding: 0 30px;
+}
+
+header .menu-desktop a:hover {
+  color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* ESTILO AGREDECIMENTO */
+
+.agradecimento {
+  padding: 30px 4%;
+  
+}
+
+.agradecimento #fiel legend {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0 10px;
+}
+.agradecimento #fiel legend span {
+  color: #00ff08;
+}
+
+.agradecimento fieldset {
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.agradecimento .redes a {
+  padding: 30px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.agradecimento .redes a i{
+   color: #00ff08;
+   padding: 5px;
+}
+
+.agradecimento2 p{
+    color: #f1f1f1;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rodape{
+    display: grid;
+    place-items: center;
+}
+
+footer{
+    text-align: center;
+    width: 98%;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(52, 52, 52, 0.857);
+    bottom: 0;
+    position: absolute;
+  }
+  
+  footer p{
+    color: #f1f1f1;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  
+  
