@@ -145,12 +145,11 @@ footer{
     width: 98%;
     border-radius: 30px;
     padding: 20px;
-    margin-bottom: 20px;
     background-color: rgba(52, 52, 52, 0.857);
     bottom: 0;
     position: absolute;
   }
-  
+
   footer p{
     color: #f1f1f1;
     font-size: 1.3em;
