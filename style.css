@@ -21,7 +21,7 @@ body {
   height: 100%;
 }
 
-header{
+header {
   background-color: rgba(52, 52, 52, 0.943);
   width: 98%;
   margin: auto;
@@ -31,11 +31,9 @@ header{
   position: sticky;
   top: 0;
   z-index: 99999999;
-  
 }
 
 main {
-  
   background-color: rgba(52, 52, 52, 0.857);
   max-width: 1500px;
   margin: auto;
@@ -53,7 +51,7 @@ main {
   display: flex;
 }
 
-button:hover{
+button:hover {
   box-shadow: 0 0 8px #00ff08;
   transform: scale(1.1);
 }
@@ -205,8 +203,6 @@ header .menu-desktop a:hover {
   border-radius: 50px;
 }
 
-
-
 .btn-social button {
   width: 60px;
   height: 60px;
@@ -217,10 +213,9 @@ header .menu-desktop a:hover {
   cursor: pointer;
   margin: 0 5px;
   transition: 0.2s;
-  
 }
 
-.btn-social .galeria > button{
+.btn-social .galeria > button {
   display: flex;
   display: inline-block;
   padding: 10px 40px;
@@ -234,8 +229,6 @@ header .menu-desktop a:hover {
   transition: 0.2s;
   width: 228px;
 }
-
-
 
 /* ESTILO VALORES */
 
@@ -287,9 +280,51 @@ header .menu-desktop a:hover {
   text-align: left;
 }
 
+/* ESTILO FOTOS PROFESSORES */
+
+.img-prof {
+  padding: 80px 4%;
+}
+
+.img-prof .flex {
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-prof img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #00ff08;
+}
+
+.img-prof .professores {
+  text-align: center;
+  border: 1px solid #b1b1b174;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.img-prof .professores:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #f1f1f169;
+}
+
+.img-prof p {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px 0;
+}
+
 /* ESTILO RODAPE */
 
-footer{
+footer {
   width: 98%;
   margin: auto;
   margin-bottom: 20px;
@@ -316,6 +351,3 @@ footer{
   text-align: center;
   margin-bottom: 50px;
 }
-
-
-
