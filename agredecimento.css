@@ -96,6 +96,7 @@ header .menu-desktop a:hover {
 
 .agradecimento {
   padding: 30px 4%;
+  /* position: relative; */
   
 }
 
@@ -104,6 +105,8 @@ header .menu-desktop a:hover {
   left: 50%;
   position: absolute;
   transform: translate(-50%,-50%);
+  width: 90%;
+  max-width: 600px;
 }
 
 .agradecimento #fiel legend {
@@ -165,4 +168,9 @@ footer{
     font-weight: 700;
   }
   
-  
+  @media screen and (max-width: 768px) {
+    .agradecimento #fiel {
+      width: 60%; /* largura para telas médias e grandes */
+    }
+
+  }
