@@ -43,7 +43,7 @@
 
     <main>
         <div class="dados">
-            <form action="agradecimento.html" method="post" id="form" name="cadastro">
+            <form action="agradecimento.html" method="get" id="form" name="cadastro">
                 <fieldset>
                     <legend>
                         Informe <span>Seus Dados</span>
@@ -64,7 +64,7 @@
 
                             <div class="cpf">
                                 <label for="cpf" class="txt">CPF*: </label>
-                                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" id="cpf" placeholder="___.___.___-__" >
+                                <input type="text" name="cpf" id="cpf" placeholder="___.___.___-__" >
                                 <span></span>
                             </div>
 
@@ -110,19 +110,19 @@
                             </div>
 
                             <div class="check">
-                                <input type="checkbox" id="aulasviolao" name="aula[]" value="aulasviolao">
+                                <input type="checkbox" id="aulasviolao" name="interesse[]" value="aulasviolao">
                                 <label for="aulasviolao" class="txt">Violão</label>
 
-                                <input type="checkbox" id="aulasviolino" name="aula[]" value="aulasviolino">
+                                <input type="checkbox" id="aulasviolino" name="interesse[]" value="aulasviolino">
                                 <label class="txt" for="aulasviolino">Violino</label>
 
-                                <input type="checkbox" id="aulasguitarra" name="aula[]" value="aulasguitarra">
+                                <input type="checkbox" id="aulasguitarra" name="interesse[]" value="aulasguitarra">
                                 <label class="txt" for="aulasguitarra">Guitarra</label>
 
                                 <span>
-                                    <input type="checkbox" id="saxofone" name="aula[]" value="saxofone">
+                                    <input type="checkbox" id="saxofone" name="interesse[]" value="saxofone">
                                     <label for="saxofone" class="txt">Saxofone</label>
-                                    <input type="checkbox" id="aulasdebateria" name="aula[]" value="aulasdebateria">
+                                    <input type="checkbox" id="aulasdebateria" name="interesse[]" value="aulasdebateria">
                                     <label class="txt" for="aulasdebateria">Bateria</label>
                                 </span>
                             </div>
@@ -145,6 +145,20 @@
                 </div>
             </form>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Dados do Formulário</h2>
+              <p><strong>Nome:</strong> <span id="modal-nome"></span></p>
+              <p><strong>Email:</strong> <span id="modal-email"></span></p>
+              <!-- Adicione outros campos do formulário aqui -->
+              <button id="submitForm" class="modal-button">Enviar</button>
+              <button id="clearForm" class="modal-button">Limpar</button>
+              <button id="editForm" class="modal-button">Editar</button>
+            </div>
+          </div>
+
     </main>
 
     <footer>
