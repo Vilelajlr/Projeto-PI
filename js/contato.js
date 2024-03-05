@@ -17,12 +17,11 @@ function verifica(e) {
     spanEmail.textContent = "";
     spanCpf.textContent = "";
 
-    if(form.nome.value == "") {
+    if(form.nome.value.trim() === "" || !form.nome.value.includes(" ")) {
         spanNome.textContent = "Nome é obrigatório!";
         spanNome.style.color = "#f1f1f1";
         formValido = false;
-    }
-
+    } 
     if(form.email.value == "") {
         spanEmail.textContent = "Email é obrigatório!";
         spanEmail.style.color = "#f1f1f1";
