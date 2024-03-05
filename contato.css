@@ -123,17 +123,9 @@ button:hover{
   border: 2px solid lightgreen;
 }
 
-.inserir__dados input:valid + span::after {
-  content: "✅";
-}
 
-.inserir__dados input:invalid {
-  border: 2px solid red;
-}
 
-.inserir__dados input:invalid + span::after {
-  content: "❌";
-}
+
 
 .inserir__dados input:focus {
   outline: none;

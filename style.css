@@ -375,6 +375,34 @@ header .menu-desktop a:hover {
   margin: 20px 0;
 }
 
+/* carrosel */
+
+.carrousel-item{
+  text-align: center;
+}
+
+
+/* contador */
+.alunos-formados .interface{
+  padding: 80px 4%;
+}
+
+.alunos-formados .flex{
+  align-items: center;
+  justify-content: center;
+}
+
+.alunos-formados h1{
+  color: #f1f1f1;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.alunos-formados h1 span{
+  margin-right: 10px;
+}
+
 /* ESTILO RODAPE */
 
 footer {

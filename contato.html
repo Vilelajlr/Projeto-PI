@@ -43,7 +43,7 @@
 
     <main>
         <div class="dados">
-            <form action="agradecimento.html" method="get" id="form" name="cadastro">
+            <form action="agradecimento.html" method="post" id="form" name="cadastro">
                 <fieldset>
                     <legend>
                         Informe <span>Seus Dados</span>
@@ -52,25 +52,25 @@
                         <div class="inserir__dados">
                             <div class="nome">
                                 <label for="nome" class="txt">Nome*:</label>
-                                <input type="text" name="cadNome" id="nome" placeholder="Digite o Seu Nome" required>
+                                <input type="text" name="nome" id="nome" placeholder="Digite o Seu Nome">
                                 <span></span>
                             </div>
 
                             <div class="email">
                                 <label for="email" class="txt">E-mail*: </label>
-                                <input type="email" name="cadEmail" id="email" placeholder="Digite Seu Email" required>
+                                <input type="email" name="email" id="email" placeholder="Digite Seu Email" >
                                 <span></span>
                             </div>
 
                             <div class="cpf">
                                 <label for="cpf" class="txt">CPF*: </label>
-                                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cadCPF" id="cpf" placeholder="___.___.___-__" required>
+                                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" id="cpf" placeholder="___.___.___-__" >
                                 <span></span>
                             </div>
 
                             <div class="dtnasci">
                                 <label for="dtnas" class="txt">Data de Nascimento: </label>
-                                <input type="date" name="cadDAT" id="dtnas" required>
+                                <input type="date" name="cadDAT" id="dtnas" >
                                 <span></span>
                             </div>
                                 
@@ -98,7 +98,7 @@
                             <div class="contato">
                                 <p>
                                     <label class="txt"> Tipo de Contato*:
-                                    <select name="rec" id="selec" required>
+                                    <select name="rec" id="selec" >
                                         <option value="">Selecione</option>
                                         <option value="sugestao">Sugestão</option>
                                         <option value="duvidas">Dúvidas</option>
@@ -140,7 +140,7 @@
                 </div>
 
                 <div class="btn-enviar-limpar">
-                    <button>Enviar</button>
+                    <button>Cadastrar</button>
                     <button type="reset">Limpar Campos de Dados</button>
                 </div>
             </form>
@@ -151,7 +151,7 @@
         <p>© Criado por José Leandro e Predro Henrique Vilela</p>
     </footer>
 
-    <script src="js/contato.js"></script>
+    <script src="./js/contato.js"></script>
     
 </body>
 </html>
