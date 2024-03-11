@@ -1,4 +1,4 @@
- // Função para gerar um número aleatório maior que o último número gerado
+$(document).ready(function() { // Função para gerar um número aleatório maior que o último número gerado
  function gerarNumeroAleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -14,3 +14,8 @@
 
   // Armazena o novo número gerado no armazenamento local para a próxima vez que a página for carregada
   localStorage.setItem('ultimoNumero', novoNumero);
+
+
+  $('ul>li:even').css('color', '#00f08e')
+
+});
