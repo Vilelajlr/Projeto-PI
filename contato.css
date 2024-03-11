@@ -233,6 +233,11 @@ button:hover{
   cursor: pointer;
 }
 
+/* estilo form */
+
+.span-required{
+  display: none;
+}
 
 /* Estilos para o modal */
 .modal {

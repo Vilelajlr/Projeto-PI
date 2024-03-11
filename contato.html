@@ -52,20 +52,22 @@
                         <div class="inserir__dados">
                             <div class="nome">
                                 <label for="nome" class="txt">Nome*:</label>
-                                <input type="text" name="nome" id="nome" placeholder="Digite o Seu Nome">
-                                <span></span>
+                                <input type="text" name="nome" id="nome" class="required" placeholder="Digite o Seu Nome">
+                                <span class="span-required">Nome deve ter um sobrenome e mais que 3 caracteres</span>
                             </div>
 
                             <div class="email">
                                 <label for="email" class="txt">E-mail*: </label>
-                                <input type="email" name="email" id="email" placeholder="Digite Seu Email" >
-                                <span></span>
+                                <input type="email" name="email" id="email" class="required" placeholder="Digite Seu Email" >
+                                <span class="span-required">Digite um email válido</span>
                             </div>
 
                             <div class="cpf">
                                 <label for="cpf" class="txt">CPF*: </label>
-                                <input type="text" name="cpf" id="cpf" placeholder="___.___.___-__" >
-                                <span></span>
+                                <input type="text" name="cpf" id="cpf"
+                                class="required"
+                                placeholder="___.___.___-__" >
+                                <span class="span-required">Digite um cpf válido</span>
                             </div>
 
                             <div class="dtnasci">

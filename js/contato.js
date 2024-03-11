@@ -1,96 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.forms.cadastro;
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        if (validaFormulario()) {
-            abrirModal();
-        }
-    });
 
-    // Obtenha o elemento de fechamento do modal
-    const closeBtn = document.querySelector('.close');
-    closeBtn.addEventListener('click', fecharModal);
-});
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
+const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
 
-function validaFormulario() {
-    let formValido = true;
+campos[0].addEventListener('input', nameValidate);
+campos[1].addEventListener('input', emailValidate);
+campos[2].addEventListener('input', cpfValidate);
 
-    const nomeInput = document.getElementById('nome');
-    const emailInput = document.getElementById('email');
-    const cpfInput = document.getElementById('cpf');
-    const tipoContatoSelect = document.getElementById('selec');
-    const interesseCheckboxes = document.querySelectorAll('input[name="interesse[]"]:checked');
 
-    const nomeError = document.querySelector('.nome span');
-    const emailError = document.querySelector('.email span');
-    const cpfError = document.querySelector('.cpf span');
-    const tipoContatoError = document.querySelector('.contato span');
-    const interesseError = document.querySelector('.check span');
 
-    // Limpa mensagens de erro anteriores
-    nomeError.textContent = '';
-    emailError.textContent = '';
-    cpfError.textContent = '';
-    tipoContatoError.textContent = '';
-    interesseError.textContent = '';
-
-    // Validação do Nome
-    if (nomeInput.value.trim() === '' || nomeInput.value.split(' ').length < 2) {
-        nomeError.textContent = 'Nome completo é obrigatório (pelo menos dois termos)!';
-        nomeInput.classList.add('error');
-        formValido = false;
-    } else {
-        nomeInput.classList.remove('error');
-    }
-
-    // Validação do Email
-    if (emailInput.value.trim() === '' || !emailInput.value.includes('@') || !emailInput.value.includes('.') || emailInput.value.lastIndexOf('@') > emailInput.value.lastIndexOf('.')) {
-        emailError.textContent = 'Email inválido!';
-        emailInput.classList.add('error');
-        formValido = false;
-    } else {
-        emailInput.classList.remove('error');
-    }
-
-    // Validação do CPF
-    if (cpfInput.value.trim() === '' || cpfInput.value.length !== 14) {
-        cpfError.textContent = 'CPF inválido!';
-        cpfInput.classList.add('error');
-        formValido = false;
-    } else {
-        cpfInput.classList.remove('error');
-    }
-
-    // Validação do Tipo de Contato
-    if (tipoContatoSelect.value === '') {
-        tipoContatoError.textContent = 'Selecione o tipo de contato!';
-        tipoContatoSelect.classList.add('error');
-        formValido = false;
-    } else {
-        tipoContatoSelect.classList.remove('error');
-    }
-
-    // Validação dos Interesses
-    if (interesseCheckboxes.length === 0) {
-        interesseError.textContent = 'Selecione pelo menos um interesse!';
-        formValido = false;
-    }
-
-    return formValido;
+function setErros(index){
+    campos[index].stylr.border = '1px solid #e63636';
+    spans[index].style.display = 'block';
 }
 
-
-function abrirModal() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'block';
-
-    // Exiba os dados do formulário no modal
-    document.getElementById('modal-nome').textContent = document.getElementById('nome').value;
-    document.getElementById('modal-email').textContent = document.getElementById('email').value;
-    // Adicione outros campos do formulário aqui
+function setValidate(index){
+    campos[index].style.border = '1px solid #00ff00';
+    spans[index].style.display = 'none';
 }
 
-function fecharModal() {
-    const modal = document.getElementById('myModal');
-    modal.style.display = 'none';
+function nameValidate(index){
+    if(campos[index].value === ' ' && campos[index].value.length < 3){
+        setErros(0);
+    }else{
+        setValidate(0);
+    }
+}
+
+function emailValidate(index){
+    if(emailRegex.test(campos[1].value)){
+        setValidate(1);
+    }else{
+        setErros(1);
+    }
+}
+
+function cpfValidate(index){
+    if(cpfRegex.test(campos[2].value)){
+        setValidate(2);
+    }else{
+        setErros(2);
+    }
 }
