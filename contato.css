@@ -140,7 +140,9 @@ button:hover{
 
 /* ESTILO RECLAMAÇÕES */
 
-
+.area_texto{
+  display: none;
+}
 
 .reclamacoes {
   margin-top: 30px;

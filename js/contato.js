@@ -78,13 +78,34 @@ $(document).ready(function(){
         }
         
     };
-
-    
-
-    
-  
+   
     [openModal,editarModal, closeModal, fade].forEach((el) => {
         el.addEventListener('click', () => toggleModal());
+    });
+
+
+    $('#selec').change(function(){
+        var opcaoSelecionada = $(this).val();
+        var areaTexto = $('.area_texto');
+
+        if(opcaoSelecionada === 'sugestao'){
+          areaTexto.css('display', 'block');
+           $('#rec').attr('placeholder', 'Digite sua sugestão ...');
+        }
+        else if(opcaoSelecionada === 'reclamacoes'){
+            areaTexto.css('display', 'block');
+            $('#rec').attr('placeholder', 'Digite sua reclamação ...');
+        }
+
+         else if(opcaoSelecionada === 'duvidas'){
+            areaTexto.css('display', 'block');
+            $('#rec').attr('placeholder', 'Digite sua dúvida ...');
+        }
+
+        else{
+            $('.area_texto').css('display', 'none');
+        }
+
     });
 
 
