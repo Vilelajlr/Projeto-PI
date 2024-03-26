@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ex-Alunos da Escola de Música</title>
+<link rel="stylesheet" href="exalunos.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html"><img src="./fotos/logo.png" alt="Logo" width="150px"></a>
+                
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <a href="index.html#boasvindas">Boas Vindas</a>
+                <a href="index.html#missao">Missão</a>
+                <a href="index.html#visao">Visão</a>
+                <a href="index.html#valores">Valores</a>
+                <a href="fotos.html">Galeria de Fotos</a>
+            </nav><!--menu-desktop-->
+
+            <div class="btn-contato">
+                <a href="contato.html"><button>Contato</button></a>
+            </div><!--btn-contato-->
+
+        </div><!--interface-->
+
+    </header>
+
+
+
+    <div class="interface">
+        <h2>Ex-Alunos da Escola de Música</h2>
+
+
+    <table id="alunosTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Ano de Início</th>
+          <th>Ano de Saída</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas da tabela serão adicionadas aqui via JavaScript -->
+      </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>© Criado por José Leandro e Predro Henrique Vilela</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var exAlunos = [
+      ["João", 2010, 2015],
+      ["Maria", 2008, 2012],
+      ["Pedro", 2013, 2016],
+      ["Ana", 2011, 2017],
+      ["Carlos", 2009, 2014],
+      ["Juliana", 2015, 2020],
+      ["Lucas", 2007, 2013],
+      ["Mariana", 2012, 2018],
+      ["Fernanda", 2014, 2019],
+      ["Rafael", 2016, 2021]
+    ];
+
+    // Adiciona cada ex-aluno à tabela
+    $.each(exAlunos, function(index, aluno) {
+      var nome = aluno[0];
+      var anoInicio = aluno[1];
+      var anoSaida = aluno[2];
+      
+      var newRow = "<tr><td>" + nome + "</td><td>" + anoInicio + "</td><td>" + anoSaida + "</td></tr>";
+      $('#alunosTable tbody').append(newRow);
+    });
+  });
+</script>
+
+</body>
+</html>
